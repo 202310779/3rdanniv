@@ -433,6 +433,13 @@
 
     /* Responsive tweaks */
     @media (max-width: 768px) {
+      html,
+      body {
+        height: 100svh;
+      }
+      .scene {
+        height: 100svh;
+      }
       .layer--back {
         height: 50vh;
       }
@@ -465,6 +472,29 @@
       }
       .letter-modal__body {
         font-size: 0.95rem;
+      }
+    }
+
+    /* Extra small screens */
+    @media (max-width: 480px) {
+      .center-photo {
+        top: 38vh;
+        max-width: 74vw;
+      }
+      .letter-modal__panel {
+        max-width: 94vw;
+        max-height: 82vh;
+        padding: 1.1rem 1.15rem 1.2rem;
+      }
+      .letter-modal__body {
+        max-height: 54vh;
+        font-size: 0.9rem;
+      }
+      .letter-modal__title {
+        letter-spacing: 0.09em;
+      }
+      .letter-button {
+        bottom: 3vh;
       }
     }
   </style>
